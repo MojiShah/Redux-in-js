@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const createStore = redux.createStore;
 const applyMiddleware = redux.applyMiddleware;
-const middleware = thunkMiddleware.withExtraArgument;
+const middleware = thunkMiddleware.thunk;
 
 const initialState = {
     loading: false,
